@@ -26,8 +26,7 @@ steps:
     SonarCloud: 'sonarcloud.io-Sagar'
     scannerMode: 'Other'
     extraProperties: 'sonar.projectKey=pipelines-java'
-
 # Publish Quality Gate Result task
-- task: SonarCloudPublish@5
+- task: SonarCloudPublish@1
   inputs:
     pollingTimeoutSec: '300'
