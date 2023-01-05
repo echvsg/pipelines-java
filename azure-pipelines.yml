@@ -21,13 +21,13 @@ steps:
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
     goals: 'package'
 # Prepare Analysis Configuration task
-- task: SonarQubePrepare@5
+- task: SonarCloudPrepare@1
   inputs:
-    SonarQube: 'sonarcloud.io-Sagar'
+    SonarCloud: 'sonarcloud.io-Sagar'
     scannerMode: 'Other'
     extraProperties: 'sonar.projectKey=pipelines-java'
 
 # Publish Quality Gate Result task
-- task: SonarQubePublish@5
+- task: SonarCloudPublish@5
   inputs:
     pollingTimeoutSec: '300'
