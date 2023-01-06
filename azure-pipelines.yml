@@ -25,7 +25,7 @@ steps:
   inputs:
     SonarCloud: 'sonarcloud.io-Sagar'
     organization: 'echvsg'
-    scannerMode: CLI
+    scannerMode: Other
     extraProperties: 'sonar.projectKey=echvsg_pipelines-java'
 - task: SonarCloudAnalyze@1
   displayName: 'Run Code Analysis'
