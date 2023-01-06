@@ -27,6 +27,9 @@ steps:
     organization: 'grsisandbox'
     scannerMode: 'Other'
     #extraProperties: 'sonar.projectKey=pipelines-java'
+
+# Run Code Analysis
+- task: SonarCloudAnalyze@1
 # Publish Quality Gate Result task
 - task: SonarCloudPublish@1
   inputs:
