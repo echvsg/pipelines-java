@@ -26,6 +26,7 @@ steps:
     SonarCloud: 'sonarcloud.io-Sagar'
     organization: 'grsi1'
     scannerMode: CLI
+    extraProperties: 'sonar.projectKey=pipelines-java'
 - task: SonarCloudAnalyze@1
   displayName: 'Run Code Analysis'
     #scannerMode: 'Other'
