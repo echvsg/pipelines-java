@@ -24,7 +24,7 @@ steps:
 - task: SonarCloudPrepare@1
   inputs:
     SonarCloud: 'sonarcloud.io-Sagar'
-    organization: 'grsi1'
+    organization: 'echvsg'
     scannerMode: CLI
     extraProperties: 'sonar.projectKey=pipelines-java'
 - task: SonarCloudAnalyze@1
