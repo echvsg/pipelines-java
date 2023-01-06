@@ -24,6 +24,7 @@ steps:
 - task: SonarCloudPrepare@1
   inputs:
     SonarCloud: 'sonarcloud.io-Sagar'
+    organization: 'grsisandbox'
     scannerMode: 'Other'
     extraProperties: 'sonar.projectKey=pipelines-java'
 # Publish Quality Gate Result task
